@@ -6,8 +6,11 @@
       <list>
         <option value="$PROJECT_DIR$/UserService/pom.xml" />
         <option value="$PROJECT_DIR$/../ServiceRegistry/ServiceRegistry/pom.xml" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/../HotelService/HotelService/pom.xml" />
         <option value="$PROJECT_DIR$/../RatingService/RatingService/pom.xml" />
+=======
+>>>>>>> 0dd046edfd830f67dceca0f850458a98bcf2012f
       </list>
     </option>
   </component>

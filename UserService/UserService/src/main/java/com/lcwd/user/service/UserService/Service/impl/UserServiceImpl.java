@@ -35,8 +35,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User saveUser(User user) {
-       String randomUserId = UUID.randomUUID().toString();
-       user.setUserId(randomUserId);
+        String randomUserId = UUID.randomUUID().toString();
+        user.setUserId(randomUserId);
         return userRepository.save(user);
     }
 
@@ -103,7 +103,11 @@ public class UserServiceImpl implements UserService {
             Hotel hotel = hotelService.getHotel(rating.getHotelId());
 
 
+<<<<<<< HEAD
            // logger.info("response status code: {}",forEntity.getStatusCode());
+=======
+            // logger.info("response status code: {}",forEntity.getStatusCode());
+>>>>>>> 0dd046edfd830f67dceca0f850458a98bcf2012f
 
             //set the hotel to rating
             rating.setHotel(hotel);

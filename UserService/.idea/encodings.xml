@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+<<<<<<< HEAD
     <file url="file://$PROJECT_DIR$/../HotelService/HotelService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../RatingService/RatingService/src/main/java" charset="UTF-8" />
+=======
+>>>>>>> 0dd046edfd830f67dceca0f850458a98bcf2012f
     <file url="file://$PROJECT_DIR$/../ServiceRegistry/ServiceRegistry/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/UserService/src/main/java" charset="UTF-8" />
   </component>

@@ -2,24 +2,44 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+<<<<<<< HEAD
       <profile default="true" name="Default" enabled="true" />
+=======
+      <profile name="Annotation profile for UserService" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="UserService" />
+      </profile>
+>>>>>>> 0dd046edfd830f67dceca0f850458a98bcf2012f
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server" />
+<<<<<<< HEAD
         <module name="UserService" />
         <module name="RatingService" />
         <module name="hotel-service" />
+=======
+>>>>>>> 0dd046edfd830f67dceca0f850458a98bcf2012f
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+<<<<<<< HEAD
       <module name="RatingService" options="-parameters" />
       <module name="UserService" options="-parameters -parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="hotel-service" options="-parameters" />
+=======
+      <module name="UserService" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+>>>>>>> 0dd046edfd830f67dceca0f850458a98bcf2012f
     </option>
   </component>
 </project>

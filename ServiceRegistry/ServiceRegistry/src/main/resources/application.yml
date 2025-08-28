@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+=======
+#
+#spring:
+#  application:
+#    name: eureka-server-config
+#
+#server:
+#  port: 8761
+#
+#eureka:
+#  instance:
+#    hostname: localhost
+#
+#  #this is server and dont need to make it client
+#
+#  client:
+#    register-with-eureka: false      # means this serviCe is not regsiter as client it is service
+#    fetch-registry: false
+#  server:
+#    wait-time-in-ms-when-sync-empty: 0
+#
+#
+
+
+>>>>>>> 0dd046edfd830f67dceca0f850458a98bcf2012f
 spring:
   application:
     name: eureka-server
