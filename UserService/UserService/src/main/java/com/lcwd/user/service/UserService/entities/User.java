@@ -3,7 +3,6 @@ package com.lcwd.user.service.UserService.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
-import javax.print.attribute.standard.MediaSize;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,20 +31,21 @@ public class User {
     @Transient
     private List<Rating> ratings = new ArrayList<>();
 
-    public String getUserId() {
-        return userId;
+
+    public List<Rating> getRatings() {
+        return ratings;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setRatings(List<Rating> ratings) {
+        this.ratings = ratings;
     }
 
-    public String getName() {
-        return name;
+    public String getAbout() {
+        return about;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setAbout(String about) {
+        this.about = about;
     }
 
     public String getEmail() {
@@ -56,11 +56,19 @@ public class User {
         this.email = email;
     }
 
-    public String getAbout() {
-        return about;
+    public String getName() {
+        return name;
     }
 
-    public void setAbout(String about) {
-        this.about = about;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 }

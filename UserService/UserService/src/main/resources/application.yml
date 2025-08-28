@@ -1,13 +1,17 @@
+
+# ===== application.yml =====
 server:
   port: 8081
 
 spring:
+  application:
+    name: USER-SERVICE
+
   datasource:
     url: jdbc:mysql://localhost:3306/mircroservices_hotel
     username: root
     password: ac3r
     driver-class-name: com.mysql.cj.jdbc.Driver
-
 
   jpa:
     hibernate:
@@ -15,4 +19,87 @@ spring:
     show-sql: true
     properties:
       hibernate:
-        dialect:org.hibernate.dialect.MySQL8Dialect
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#server:
+#  port: 8081
+#
+#spring:
+#  application:
+#    name: USER-SERVICE
+#
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/mircroservices_hotel
+#    username: root
+#    password: ac3r
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#
+#jpa:
+#  hibernate:
+#    ddl-auto: update
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL8Dialect
+#
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+##server:
+##  port: 8081
+##
+##spring:
+##  application:
+##    name: USER-SERVICE
+##  datasource:
+##    url: jdbc:mysql://localhost:3307/microservices
+##    username: root
+##    password: root
+##    driver-class-name: com.mysql.cj.jdbc.Driver
+##  jpa:
+##    hibernate:
+##      ddl-auto: update
+##    show-sql: true
+##    properties:
+##      hibernate:
+##        dialect: org.hibernate.dialect.MySQL8Dialect
+##
+##
+##eureka:
+##  instance:
+##    prefer-ip-address: true
+##  client:
+##    fetch-registry: true
+##    register-with-eureka: true
+##    service-url:
+##      defaultZone: http://localhost:8761/eureka
