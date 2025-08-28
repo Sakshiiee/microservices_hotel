@@ -1,7 +1,7 @@
 package com.lcwd.ratings.RatingService.services.impl;
 
 import com.lcwd.ratings.RatingService.entities.Rating;
-import com.lcwd.ratings.RatingService.repositories.RatingRepositories;
+import com.lcwd.ratings.RatingService.repositories.RatingRepository;
 import com.lcwd.ratings.RatingService.services.RatingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,25 +12,26 @@ import java.util.List;
 public class RatingServiceImpl implements RatingService {
 
     @Autowired
-    private RatingRepositories ratingRepositories;
+    private RatingRepository ratingRepository;
 
     @Override
     public Rating create(Rating rating) {
-        return ratingRepositories.save(rating);
+        return ratingRepository.save(rating);
     }
 
     @Override
     public List<Rating> getRatings() {
-        return ratingRepositories.findAll();
+        return ratingRepository.findAll();
     }
 
     @Override
     public List<Rating> getRatingByUserId(String userId) {
-        return ratingRepositories.findByUserId(userId);
+        // Directly fetch from MongoDB
+        return ratingRepository.findByUserId(userId);
     }
 
     @Override
     public List<Rating> getRatingsByHotelId(String hotelId) {
-        return ratingRepositories.findByHotelId(hotelId);
+        return ratingRepository.findByHotelId(hotelId);
     }
 }
